@@ -217,8 +217,8 @@ $3gpuAvailableComputeA = [System.Int32]::Parse($3gpuAvailableComputeStr)
 
 
 <# 4 #>
-# LOG の保存先ディレクトリを作成
-$DIRpath=$SptDirPATH.TrimEnd('\') + "\LOG"
+# Log の保存先ディレクトリを作成
+$DIRpath=$SptDirPATH.TrimEnd('\') + "\Log"
 if ( -not ( Test-Path -Path "$DIRpath" )){ New-Item "$DIRpath" -ItemType Directory > $null }
 Get-Date | Out-String -Stream | ?{$_ -ne ""} | Out-File "$DIRpath\GPU-P_log.txt" -Append -Force
 
