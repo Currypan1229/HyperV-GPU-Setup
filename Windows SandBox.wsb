@@ -1,0 +1,9 @@
+<Configuration>
+<VGpu>Enable</VGpu>
+<MappedFolders>
+   <MappedFolder>
+       <HostFolder>.\Share</HostFolder>
+       <ReadOnly>false</ReadOnly>
+   </MappedFolder>
+</MappedFolders>
+</Configuration>
